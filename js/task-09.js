@@ -7,7 +7,7 @@ buttonChangeColor.addEventListener("click", onButtonClick);
 
 function onButtonClick() {
   const randomBackgroundColor = getRandomHexColor();
-  bodyEl.style.backgroundColor = randomBackgroundColor;
+  body.style.backgroundColor = randomBackgroundColor;
   colorText.textContent = randomBackgroundColor;
 }
 
