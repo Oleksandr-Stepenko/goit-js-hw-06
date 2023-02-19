@@ -4,8 +4,11 @@ const outputName = document.querySelector('#name-output');
 inputName.addEventListener('input', onInput);
 
 function onInput(event) {
-
-	event.currentTarget.value
-    ? (outputName.textContent = event.currentTarget.value)
-    : (outputName.textContent = "Anonymous");
+	if (!event.currentTarget.value) {
+    outputName.textContent = "Anonymous"
+	}
+	else{
+    outputName.textContent = event.currentTarget.value;
+	}
+	// console.dir(event.currentTarget.value);
 }
